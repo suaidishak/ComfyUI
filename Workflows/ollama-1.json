@@ -1,0 +1,1015 @@
+{
+  "last_node_id": 18,
+  "last_link_id": 21,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "IF_SaveText",
+      "pos": [
+        512.3749734130859,
+        184.95097386474617
+      ],
+      "size": {
+        "0": 315,
+        "1": 238
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "question_input",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "question_input"
+          }
+        },
+        {
+          "name": "response_input",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "response_input"
+          }
+        },
+        {
+          "name": "negative_input",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "negative_input"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Question",
+          "type": "STRING",
+          "links": [
+            4
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "Response",
+          "type": "STRING",
+          "links": [
+            6
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "Negative",
+          "type": "STRING",
+          "links": [
+            7
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "Turn",
+          "type": "STRING",
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IF_SaveText"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        true,
+        "txt",
+        "append"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "ShowText|pysssss",
+      "pos": [
+        892.3749734130859,
+        144.95097386474615
+      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 4,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Ancient mega-structure, samll lone figure in the foreground"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "ShowText|pysssss",
+      "pos": [
+        872.3749734130859,
+        284.95097386474606
+      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 5,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "ID: 916d027c-4958-4033-9b4b-4f53a5cbc986\nQuestion: Ancient mega-structure, samll lone figure in the foreground\nResponse: Best quality, masterpiece, Epic, cover-art, Subject: Ancient Mega-Structure\n\nPrompt: Small lone figure, humanoid shape, dusty orange robes, staff with glowing crystal tip, standing in front of massive stone door, ancient carvings, intricate patterns, dimly lit hallway. Background: Enormous mega-structure, crumbling arches, vines crawling up walls, mysterious symbols etched into stone, echoes of forgotten history. ethereal-fantasy-concept-art, magical-ambiance, magnificent, celestial, ethereal-lighting, painterly, epic, majestic, dreamy-atmosphere, otherworldly, mystic-elements, surreal, immersive-detail\nNegative: hand,NSFW,nude,naked,nipples,chibi, child,worst quality, low quality, lowres,bad proportions,missing arms,fused fingers,unclear eyes,missing fingers,out of frame,signature,logo,text,letters,username"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1252.3749734130852,
+        404.95097386474606
+      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "hand,NSFW,nude,naked,nipples,chibi, child,worst quality, low quality, lowres,bad proportions,missing arms,fused fingers,unclear eyes,missing fingers,out of frame,signature,logo,text,letters,username"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1272.3749734130852,
+        164.95097386474617
+      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Best quality, masterpiece, Epic, cover-art, Subject: Ancient Mega-Structure\n\nPrompt: Small lone figure, humanoid shape, dusty orange robes, staff with glowing crystal tip, standing in front of massive stone door, ancient carvings, intricate patterns, dimly lit hallway. Background: Enormous mega-structure, crumbling arches, vines crawling up walls, mysterious symbols etched into stone, echoes of forgotten history. ethereal-fantasy-concept-art, magical-ambiance, magnificent, celestial, ethereal-lighting, painterly, epic, majestic, dreamy-atmosphere, otherworldly, mystic-elements, surreal, immersive-detail"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "EmptyLatentImage",
+      "pos": [
+        1834.9466903906246,
+        803.5233849462887
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            8
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        512,
+        512,
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        1814.9466903906246,
+        603.5233849462886
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            9
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            10,
+            11
+          ],
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            20
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "juggernautXL_v9Rdphoto2Lightning.safetensors"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "IF_PromptMkr",
+      "pos": [
+        72.37497341308595,
+        164.95097386474617
+      ],
+      "size": {
+        "0": 400,
+        "1": 212
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "Question",
+          "type": "STRING",
+          "links": [
+            1
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "Response",
+          "type": "STRING",
+          "links": [
+            2
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "Negative",
+          "type": "STRING",
+          "links": [
+            3
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IF_PromptMkr"
+      },
+      "widgets_values": [
+        "Ancient mega-structure, samll lone figure in the foreground",
+        "gemma:latest",
+        "Epic",
+        "FantasyArt",
+        "simple_negative"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1260,
+        620
+      ],
+      "size": {
+        "0": 360,
+        "1": 60
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 10,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 15,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            17
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 12,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1260,
+        740
+      ],
+      "size": {
+        "0": 360,
+        "1": 80
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 11,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 16,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            18
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 17,
+      "type": "VAEDecode",
+      "pos": [
+        1280,
+        860
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 19
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            21
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 8,
+      "type": "KSampler",
+      "pos": [
+        2340,
+        680
+      ],
+      "size": {
+        "0": 280,
+        "1": 280
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 9
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 17
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 18
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            19
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        218588126672441,
+        "randomize",
+        20,
+        8,
+        "euler",
+        "normal",
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "type": "PreviewImage",
+      "pos": [
+        1540,
+        980
+      ],
+      "size": {
+        "0": 700,
+        "1": 340
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 21
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 16,
+      "type": "ShowText|pysssss",
+      "pos": [
+        680,
+        1180
+      ],
+      "size": {
+        "0": 460,
+        "1": 240
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 14,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            16
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "bad-hands-5, FastNegativeEmbedding, low quality:1.4, jpeg artifacts:1.5, letterbox, beginner, amateur, signature, watermark, username, logo, greyscale, monochrome, bad anatomy, missing arms, missing legs, extra arms, extra legs, bad legs, bad feet, extra fingers, fewer fingers, bad hand, poorly drawn face, mutation, deformed, ((head wear)), ((cropped head)), ((head out of frame)), child:1.1, female:1.9, woman:1.9, girl:1.9"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "ShowText|pysssss",
+      "pos": [
+        700,
+        720
+      ],
+      "size": {
+        "0": 440,
+        "1": 400
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 13,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            15
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Award winning, masterpiece, High detail, \nSXL image generation prompt for the image [img-0]\n\nPlease analyze the image [img-0] and write a prompt for SDXL image generation for the image\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Minimalist style, Simple, modern-aesthetic, clean, clear-visual, modern, elegant,  functional-beauty,"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "ShowText|pysssss",
+      "pos": [
+        720,
+        600
+      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 12,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "what is this? write a prompt for SDXL image generation"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "IF_ImagePrompt",
+      "pos": [
+        60,
+        640
+      ],
+      "size": {
+        "0": 580,
+        "1": 624
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "Question",
+          "type": "STRING",
+          "links": [
+            12
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "Response",
+          "type": "STRING",
+          "links": [
+            13
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "Negative",
+          "type": "STRING",
+          "links": [
+            14
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IF_ImagePrompt"
+      },
+      "widgets_values": [
+        "what is this? write a prompt for SDXL image generation",
+        "ComfyUI_temp_mynbi_00042_ (2).png",
+        "llama2:latest",
+        "Award",
+        "Minimalist",
+        "BadMacho",
+        0.7,
+        2047997972,
+        "randomize",
+        100,
+        0.1,
+        2047,
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      1,
+      1,
+      2,
+      1,
+      "STRING"
+    ],
+    [
+      3,
+      1,
+      2,
+      2,
+      2,
+      "STRING"
+    ],
+    [
+      4,
+      2,
+      0,
+      3,
+      0,
+      "STRING"
+    ],
+    [
+      5,
+      2,
+      3,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      2,
+      1,
+      5,
+      0,
+      "STRING"
+    ],
+    [
+      7,
+      2,
+      2,
+      6,
+      0,
+      "STRING"
+    ],
+    [
+      8,
+      9,
+      0,
+      8,
+      3,
+      "LATENT"
+    ],
+    [
+      9,
+      7,
+      0,
+      8,
+      0,
+      "MODEL"
+    ],
+    [
+      10,
+      7,
+      1,
+      11,
+      0,
+      "CLIP"
+    ],
+    [
+      11,
+      7,
+      1,
+      12,
+      0,
+      "CLIP"
+    ],
+    [
+      12,
+      13,
+      0,
+      14,
+      0,
+      "STRING"
+    ],
+    [
+      13,
+      13,
+      1,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      14,
+      13,
+      2,
+      16,
+      0,
+      "STRING"
+    ],
+    [
+      15,
+      15,
+      0,
+      11,
+      1,
+      "STRING"
+    ],
+    [
+      16,
+      16,
+      0,
+      12,
+      1,
+      "STRING"
+    ],
+    [
+      17,
+      11,
+      0,
+      8,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      18,
+      12,
+      0,
+      8,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      19,
+      8,
+      0,
+      17,
+      0,
+      "LATENT"
+    ],
+    [
+      20,
+      7,
+      2,
+      17,
+      1,
+      "VAE"
+    ],
+    [
+      21,
+      17,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Ollama Group",
+      "bounding": [
+        44,
+        45,
+        1622,
+        465
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Group",
+      "bounding": [
+        1202,
+        547,
+        1552,
+        904
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Ollama If",
+      "bounding": [
+        25,
+        538,
+        1158,
+        941
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

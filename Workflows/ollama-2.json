@@ -1,0 +1,167 @@
+{
+  "last_node_id": 21,
+  "last_link_id": 23,
+  "nodes": [
+    {
+      "id": 19,
+      "type": "IF_ImagePrompt",
+      "pos": [
+        440,
+        240
+      ],
+      "size": [
+        480,
+        640
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "Question",
+          "type": "STRING",
+          "links": [
+            22
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "Response",
+          "type": "STRING",
+          "links": [
+            23
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "Negative",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IF_ImagePrompt"
+      },
+      "widgets_values": [
+        "what is this? write a prompt in SDXL fro image generation",
+        "ComfyUI_temp_tzirv_00005_.png",
+        "llama2:latest",
+        "Award",
+        "Photographic",
+        "BadMacho",
+        0.7,
+        628346380,
+        "randomize",
+        40,
+        1.1,
+        2048,
+        "image"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "ShowText|pysssss",
+      "pos": [
+        980,
+        440
+      ],
+      "size": [
+        480,
+        360
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 23,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Award winning, masterpiece, High detail, \nImage Analysis:\n\nThe image you have provided is an interesting combination of colors, shapes, and patterns. It appears to be a digital artwork or illustration, with intricate details and textures. The image features a mix of warm and cool tones, with a predominantly blue and green color scheme. There are also hints of yellow, orange, and purple hues throughout the piece.\n\nThe composition of the image is quite complex, with multiple layers and shapes intersecting and overlapping each other. The central element of the image appears to be a large, rounded shape with jagged edges, surrounded by smaller, more intricate shapes. These shapes could be interpreted as plants, flowers, or even celestial bodies.\n\nThe overall mood of the image seems to be calm and serene, with a hint of mystery and wonder. It's difficult to pinpoint an exact emotion or theme, due to the abstract nature of the image. However, it does seem to evoke a sense of fantasy and imagination, as if one is looking at a dreamlike landscape from a fictional world.\n\nUser's Question:\n\n\"Write a prompt in SDXL for image generation based on this image.\"\n\nResponse:\n\nSure! Here's a potential prompt for generating an image based on the one you provided:\n\nTitle: Dreamy Landscape of Mystery\n\nDescription: Create an image that captures the surreal and fantastical quality of the provided image. The composition should be similar, with multiple layers and shapes intersecting each other. However, feel free to add your own twist and interpretation to the design.\n\nColor Palette: Incorporate a mix of warm and cool tones, with a focus on blues, greens, yellows, oranges, and purples. Add some unexpected colors to create a unique and dreamy atmosphere.\n\nComposition: The central element of the image should be a large, rounded shape with jagged edges, surrounded by smaller shapes that seem to interact with it. Consider adding elements such as clouds, stars, or other celestial bodies to enhance the fantastical quality of the image.\n\nMood and Emotion: The overall mood of the image should be calm and serene, with a hint of mystery and wonder. Encourage the AI to generate an image that evokes a sense of imagination and creativity, as if one is looking at a dreamlike landscape from a fictional world.\n\nAdditional Tips: Consider using textures and patterns to add depth and interest to the image. You could also experiment with different shapes and angles to create a more dynamic composition. Have fun with it and see where the AI takes you! cinematic photo, 35mm photograph, film, bokeh, professional, 4k, RAW, depth-of-field-focus, dynamic-range-enhancement,"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "ShowText|pysssss",
+      "pos": [
+        980,
+        240
+      ],
+      "size": [
+        420,
+        140
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 22,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "what is this? write a prompt in SDXL fro image generation"
+      ]
+    }
+  ],
+  "links": [
+    [
+      22,
+      19,
+      0,
+      20,
+      0,
+      "STRING"
+    ],
+    [
+      23,
+      19,
+      1,
+      21,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
